@@ -1,0 +1,90 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[journal,twoside,web]{IEEEmiot}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage[mathlines,switch]{lineno}
+\usepackage{multicol,multirow}
+\usepackage{marginnote}
+\usepackage{stfloats}
+
+\usepackage{mcomstd}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,
+      linkcolor=nblue,
+      citecolor=nblue,
+      urlcolor=nblue,
+      filecolor=nblue}
+
+\usepackage{etoolbox}
+
+\markboth{\bf More Than a Clock}{}
+
+\title{More Than a Clock: A Connected Time and Information Display for Shared Spaces}
+
+\author{Md~Siratul~Islam and Md~Rasedujjaman
+%\thanks{}
+}
+
+\pubid{\begin{tabular}{@{}p{30pc}@{}}\\[-2pt]\multicolumn{1}{c}{2576-3180~\textcopyright~XXXX~IEEE. Applicable Copyright}\\[7pt]\end{tabular}}
+
+
+\begin{document}
+
+
+\maketitle
+
+
+\funding{This work has been supported by funds from SUST Research Center}
+
+
+\doi{10.1109/MIOT.XXXX.XXXXXX}
+\DCV{XX XXXX XXXX}
+\DOP{XX XXXX XXXX}
+
+
+\begin{firstfootnote}
+Md~Siratul~Islam is with the Department of Physics and the Department of Electrical and Electronic Engineering, Shahjalal University of Science and Technology, Sylhet 3114, Bangladesh (e-mail: siratul.islam@linux.dev)
+
+Md~Rasedujjaman is with the Department of Electrical and Electronic Engineering, Shahjalal University of Science and Technology, Sylhet 3114, Bangladesh (e-mail: mrased-eee@sust.edu)
+\end{firstfootnote}
+
+
+
+\bodyfont
+
+\begin{abstract}
+This document provides a guide for preparing articles for IEEE \textsc{Internet of Things Magazine}. Otherwise, use this as an instruction set. The electronic file of your article will be formatted further at IEEE. Titles should be written as shown above. Avoid writing long formulas with subscripts in the title; short formulas that identify the elements are fine (e.g., “Nd–Fe–B”). Do not write “(Invited)” in the title. Full names of authors are preferred in the author field but are not required. Put a space between authors’ initials. ORCIDs should be provided here as well. In the title, all variables should appear lightface italic; numbers and units will remain bold. Abstracts must be a single paragraph. In order for an Abstract to be effective when displayed in IEEE \textit{Xplore} as well as through indexing services such as Compendex, INSPEC, Medline, ProQuest, and Web of Science, it must be an accurate, stand-alone reflection of the contents of the article. They shall not contain displayed mathematical equations, numbered reference citations, nor footnotes. They should include three or four different keywords or phrases, as this will help readers to find it. It is important to avoid over-repetition of such phrases as this can result in a page being rejected by search engines. Ensure that your abstract reads well and is grammatically correct.
+\end{abstract}
+
+
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/system_overview.tex}
+\input{sections/hardware.tex}
+\input{sections/software.tex}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+\section{Biographies}
+\vspace*{-30pt}
+
+\begin{biography}[{\parbox[b][1.25in][t]{1in}{\includegraphics[width=1in,height=1.25in,keepaspectratio]{sirat}}}]{Md~Siratul~Islam} is pursuing the B.Sc. degree in Physics and serves as a Research Assistant in Electrical and Electronic Engineering at Shahjalal University of Science and Technology, Bangladesh. He authored and maintains Zephyr's FIDO2 and biometrics subsystems, maintains Linux drivers, and reviews IIO patches.
+\end{biography}
+
+\begin{biography}[{\parbox[b][1.25in][t]{1in}{\includegraphics[width=1in,height=1.25in,keepaspectratio]{resedujjaman}}}]{Md~Rasedujjaman}
+is with the Department of Electrical and Electronic Engineering, Shahjalal University of Science and Technology, Bangladesh.
+\end{biography}
+
+
+\vfill
+\end{document}
+
